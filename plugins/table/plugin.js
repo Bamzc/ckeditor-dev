@@ -39,8 +39,9 @@ CKEDITOR.plugins.add( 'table', {
 								// basic comoponents(border-top...border-right). We have to check if those parameters exists and
 								// have the same value to get expected editor behavior. (#566)
 								if ( styleData[ 'border-left' ] && styleData[ 'border-left' ] === styleData[ 'border-right' ] &&
-										styleData[ 'border-right' ] === styleData[ 'border-top' ] &&
-										styleData[ 'border-top' ] === styleData[ 'border-bottom' ] ) {
+									styleData[ 'border-right' ] === styleData[ 'border-top' ] &&
+									styleData[ 'border-top' ] === styleData[ 'border-bottom' ] ) {
+
 									parsedStyle = CKEDITOR.tools.style.parse.border( styleData[ 'border-top' ] );
 								}
 							}

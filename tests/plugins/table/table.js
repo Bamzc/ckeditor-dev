@@ -130,6 +130,7 @@
 			assert.isTrue( /border="0"/.test( bot.editor.getData() ), 'Border attribute should be zero' );
 		},
 
+		// (#566)
 		'test html border attribute behaviour when CSS border is not  0': function() {
 			var bot = this.editorBots.editor;
 
